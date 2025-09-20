@@ -1,0 +1,175 @@
+/* ====== Responsive ====== */
+
+/* Desktop >= 1024px */
+@media (min-width: 1024px) {
+  .menu-toggle {
+    display: none; /* Ẩn hamburger trên màn hình lớn */
+  }
+  .nav {
+    position: static;
+    background: none;
+    height: auto;
+    transform: none;
+    box-shadow: none;
+  }
+  .nav ul {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+/* Tablet (740px – 1023px) */
+@media (min-width:740px) and (max-width: 1023px) {
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    width: 30px;
+    height: 24px;
+  }
+  .menu-toggle span {
+    display: block;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+/* Khi active → biến thành dấu ✕ */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+.invisible-title{
+    display: inline;
+}
+  .nav {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 240px;
+    height: 100vh;
+    background: #111;
+    padding: 0px 20px;
+    transition: 0.3s;
+    z-index: 2000;
+  }
+  .nav.active {
+    left: 0;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 1.5rem;
+      gap: 1.5rem;
+  padding: 0 20px;
+  }
+
+  /* overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+  }
+  body.menu-open::after {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .credits-wrap{
+    max-width: 670px;
+  }
+}
+
+/* Mobile <= 739px */
+@media (max-width: 739px) {
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    width: 28px;
+    height: 22px;
+  }
+  .menu-toggle span {
+    display: block;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+ /* Khi active → biến thành dấu ✕ */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+.invisible-title{
+    display: inline;
+}
+
+  .nav a {
+  font-size: 1.2rem;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #00e0ff;
+}
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100vh;
+    background: rgba(20, 20, 20, 1);
+    flex-direction: column;
+    transition: left 0.4s ease;
+    padding-top: 5%;
+  }
+
+  .nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 20px;
+  }
+  .nav.active {
+    left: 0;
+  }
+
+  /* overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+  }
+  body.menu-open::after {
+    opacity: 1;
+    pointer-events: auto;
+  }
+    .credits-wrap{
+    max-width: 670px;
+  }
+}

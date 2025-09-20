@@ -1,0 +1,227 @@
+ <!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie Art - Cửa hàng tranh vẽ</title>
+  <link rel="stylesheet" href="./bo-suu-tap.css">
+  <link rel="stylesheet" href="/animation.css">
+  <link rel="stylesheet" href="./responsive.css">
+  
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>Art Gallery</h1>
+      </div>
+<div class="menu-toggle" id="menuToggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+      <nav class="nav">
+        <ul>
+          <li class="invisible-title">MENU SETTING</li>
+          <li><a href="/trang chủ/trang-chu.html">Trang chủ</a></li>
+          <li><a href="/bộ sưu tầm/bo-suu-tap.html">Bộ sưu tầm</a></li>
+          <li><a href="/đăng ký/dangky.html">Đăng ký và liên hệ</a></li>
+          <li><a href="/credit/credit.html">Credit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<!-- Overlay -->
+<div class="overlay" id="overlay"></div>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2 class="hero-title">Khám phá thế giới nghệ thuật</h2>
+      <p class="hero-subtitle">Bộ sưu tập tranh vẽ độc đáo từ các nghệ sĩ tài năng</p>
+      
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm tranh theo tên, nghệ sĩ..." class="search-input">
+        <button class="search-button" onclick="searchArt()">
+          <span class="search-icon">🔍</span>
+        </button>
+      </div>
+      
+      <a href="#gallery" class="cta-button">Xem bộ sưu tập</a>
+    </div>
+    <div class="hero-decoration">
+      <div class="floating-shape shape-1"></div>
+      <div class="floating-shape shape-2"></div>
+      <div class="floating-shape shape-3"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2 class="section-title">Bộ sưu tập tranh</h2>
+      
+      <!-- Filter Buttons -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" onclick="filterArt('all')">Tất cả</button>
+        <button class="filter-btn" onclick="filterArt('SR')">SR</button>
+        <button class="filter-btn" onclick="filterArt('Manga')">Manga/Anime+SR</button>
+        <button class="filter-btn" onclick="filterArt('chibi')">ChibiStyle</button>
+        <button class="filter-btn" onclick="filterArt('...')">.....</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="art-card" data-category="SR" data-name="picture1" data-artist="Nguyễn Văn A">
+          <div class="art-image">
+            <div class="placeholder-image SR"></div>
+            <div class="art-overlay">
+              <button class="quick-view-btn" onclick="openModal(0)">Xem nhanh</button>
+            </div>
+          </div>
+          <div class="art-info">
+            <h3>picture1</h3>
+            <p class="artist">Nghệ sĩ: Nguyễn Văn A</p>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(24)</span>
+            </div>
+            <p class="price"></p>
+            <button class="buy-button" onclick="addToCart(0)"></button>
+          </div>
+        </div>
+
+        <div class="art-card" data-category="Manga" data-name="picture2" data-artist="Trần Thị B">
+          <div class="art-image">
+            <div class="placeholder-image Manga"></div>
+            <div class="art-overlay">
+              <button class="quick-view-btn" onclick="openModal(1)">Xem nhanh</button>
+            </div>
+          </div>
+          <div class="art-info">
+            <h3>picture2</h3>
+            <p class="artist">Nghệ sĩ: Trần Thị B</p>
+            <div class="rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-count">(18)</span>
+            </div>
+            <p class="price"></p>
+            <button class="buy-button" onclick="addToCart(1)"></button>
+          </div>
+        </div>
+
+        <div class="art-card" data-category="chibi" data-name="picture3" data-artist="Lê Văn C">
+          <div class="art-image">
+            <div class="placeholder-image chibi"></div>
+            <div class="art-overlay">
+              <button class="quick-view-btn" onclick="openModal(2)">Xem nhanh</button>
+            </div>
+          </div>
+          <div class="art-info">
+            <h3>picture3</h3>
+            <p class="artist">Nghệ sĩ: Lê Văn C</p>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">(31)</span>
+            </div>
+            <p class="price"></p>
+            <button class="buy-button" onclick="addToCart(2)"></button>
+          </div>
+        </div>
+
+        <div class="art-card" data-category="SR" data-name="picture4" data-artist="Phạm Thị D">
+          <div class="art-image">
+            <div class="placeholder-image SRhost"></div>
+            <div class="art-overlay">
+              <button class="quick-view-btn" onclick="openModal(3)">Xem nhanh</button>
+            </div>
+          </div>
+          <div class="art-info">
+            <h3>picture4</h3>
+            <p class="artist">Nghệ sĩ: Phạm Thị D</p>
+            <div class="rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-count">(15)</span>
+            </div>
+            <p class="price"></p>
+            <button class="buy-button" onclick="addToCart(3)"></button>
+          </div>
+        </div>
+
+        <div class="art-card" data-category="Manga" data-name="👷🏻ĐANG CẬP NHẬT🛠️" data-artist="Hoàng Văn E">
+          <div class="art-image">
+            <div class="placeholder-image game-art"></div>
+            <div class="art-overlay">
+              <button class="quick-view-btn" onclick="openModal(4)">Xem nhanh</button>
+            </div>
+          </div>
+          <div class="art-info">
+            <h3>👷🏻ĐANG CẬP NHẬT🛠️</h3>
+            <p class="artist">👷🏻ĐANG CẬP NHẬT🛠️</p>
+            <div class="rating">
+              <span class="stars">🛠️</span>
+              <span class="rating-count"></span>
+            </div>
+            <p class="price"></p>
+            <button class="buy-button" onclick="addToCart(4)"></button>
+          </div>
+        </div>
+
+        <div class="art-card" data-category="chibi" data-name="👷🏻ĐANG CẬP NHẬT🛠️" data-artist="Vũ Thị F">
+          <div class="art-image">
+            <div class="placeholder-image fantasy"></div>
+            <div class="art-overlay">
+              <button class="quick-view-btn" onclick="openModal(5)">Xem nhanh</button>
+            </div>
+          </div>
+          <div class="art-info">
+            <h3>👷🏻ĐANG CẬP NHẬT🛠️</h3>
+            <p class="artist">👷🏻ĐANG CẬP NHẬT🛠️</p>
+            <div class="rating">
+              <span class="stars">🛠️</span>
+              <span class="rating-count"></span>
+            </div>
+            <p class="price"></p>
+            <button class="buy-button" onclick="addToCart(5)"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="urgent-note">💻 Lưu ý: Trang web hiện đang trong tiến trình phát triển.Ảnh và bộ sưu tập sẽ được cập nhật thường xuyên trong thời gian tới.</p>
+      <p>© 2025 <b>Art Gallery DMT</b> – All rights reserved</p>
+    </div>
+      <!-- Modal -->
+  <div id="artModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-body">
+        <div class="modal-image">
+          <div id="modalImage" class="placeholder-image"></div>
+        </div>
+        <div class="modal-info">
+          <h2 id="modalTitle"></h2>
+          <p id="modalArtist"></p>
+          <div id="modalRating" class="rating"></div>
+          <p id="modalPrice" class="price"></p>
+          <p id="modalDescription" class="modal-description"></p>
+          <button class="buy-button large" onclick="addToCart()"></button>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <!-- Cart Notification -->
+  <!-- <div id="cartNotification" class="cart-notification">
+    <span>✓ Đã thêm vào giỏ hàng!</span>
+  </div> -->
+  </footer>
+  <script src="./bo-suu-tap.js"></script>
+</body>
+</html>

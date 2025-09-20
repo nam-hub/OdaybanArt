@@ -1,0 +1,143 @@
+/* ==========================
+   Responsive Styles
+   ========================== */
+
+/* Tablet (<= 1024px) */
+@media (min-width:740px) and (max-width: 1023px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-introduce {
+    width: 80%;
+    padding: 60px;
+  }
+
+  .features {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  .invisible-title{
+    display: inline;
+}
+}
+
+/* Mobile (<= 768px) */
+@media (max-width: 768px) {
+  /* Header */
+  .menu-toggle {
+    display: flex;
+  }
+.invisible-title{
+    display: inline;
+}
+
+.nav a {
+  font-size: 1.2rem;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #00e0ff;
+}
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100vh;
+    background: rgba(20, 20, 20, 1);
+    flex-direction: column;
+    transition: left 0.4s ease;
+    padding-top: 5%;
+  }
+
+  .nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 20px;
+  }
+
+  .nav.active {
+    left: 0;
+  }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero-introduce {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  /* About */
+  .about p {
+    font-size: 1rem;
+    padding: 0 10px;
+    text-align: justify;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .feature {
+    padding: 1.5rem;
+  }
+}
+
+/* Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .about p {
+    font-size: 0.9rem;
+  }
+
+  .feature h3 {
+    font-size: 1.1rem;
+  }
+
+  .feature p {
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+    padding: 20px;
+  }
+}

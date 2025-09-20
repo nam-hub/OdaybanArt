@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bán Ảnh Nghệ Thuật</title>
+<link rel="stylesheet" href="./credit.css">
+<link rel="stylesheet" href="/animation.css">
+<link rel="stylesheet" href="./responsive.css">
+</head>
+<body>
+      <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>Art Gallery</h1>
+      </div>
+      <div class="menu-toggle" id="menuToggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+      <nav class="nav">
+        <ul>
+          <li class="invisible-title">MENU SETTING</li>
+          <li><a href="/trang chủ/trang-chu.html">Trang chủ</a></li>
+          <li><a href="/bộ sưu tầm/bo-suu-tap.html">Bộ sưu tầm</a></li>
+          <li><a href="/đăng ký/dangky.html">Đăng ký và liên hệ</a></li>
+          <li><a href="/credit/credit.html">Credit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<!-- Overlay -->
+<div class="overlay" id="overlay"></div>
+  <!-- Background lines -->
+  <div class="background-lines"></div>
+
+  <!-- Particles background -->
+  <div class="particles" id="particles"></div>
+
+
+
+  <div class="main-section">
+  <main class="credits-wrap">
+    <header class="credits-header">
+      <div class="logo-credits">TEAM</div>
+      <div>
+        <h2>Credits — Đội ngũ phát triển</h2>
+        <p style="color:var(--muted);font-size:14px">Cảm ơn những người đã đóng góp cho dự án</p>
+      </div>
+    </header>
+
+    <section class="team-grid">
+      <article class="member" onclick="openModal('nam')">
+        <div class="avatar">NV</div>
+        <div class="info"><p class="name">Võ Ngọc Nam</p><p class="role">main developer and designer</p></div>
+      </article>
+      <article class="member" onclick="openModal('hien')">
+        <div class="avatar">MB</div>
+        <div class="info"><p class="name">Bùi Nguyễn Tăng Minh</p><p class="role">build idea web</p></div>
+      </article>
+      <article class="member" onclick="openModal('phuoc')">
+        <div class="avatar">DMT</div>
+        <div class="info"><p class="name">Dương Minh Thành</p><p class="role">manager</p></div>
+      </article>
+      <article class="member community" onclick="openModal('congdong')">
+        <div class="avatar avatar-community">👨‍👩‍👧‍👦</div>
+        <div class="info">
+          <p class="name">Cộng đồng</p>
+          <p class="role">Lời góp ý & ủng hộ</p>
+        </div>
+      </article>
+    </section>
+
+    <footer class="credits-footer">
+      <div class="thanks" id="thanks-text">© 2025 <b>Art Gallery DMT</b> – All rights reserved</div>
+      <button class="heart-btn" id="heartBtn">♡</button>
+    </footer>
+  </main>
+  </div>
+
+
+  <script src="./credit.js"></script>
+
+</body>
+</html>
