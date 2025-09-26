@@ -429,22 +429,22 @@ align-items: center;
 /* Placeholder Image Styles - Updated for dark theme */
 .SR {
   /* background: linear-gradient(135deg, #4a4a4a 0%, #6a6a6a 50%, #5a5a5a 100%); */
-  background: url(/img/z6998699010205_d7681572aae4757db8646c45494d317f.jpg) center/cover no-repeat;
+  background: url(../img/z6998699010205_d7681572aae4757db8646c45494d317f.jpg) center/cover no-repeat;
 }
 
 .Manga {
   /* background: linear-gradient(135deg, #3a3a3a 0%, #5a5a5a 100%); */
-  background: url(/img/z6998699198345_50f46621a3a00780ae08895d09520139.jpg) center/cover no-repeat;
+  background: url(../img/z6998699198345_50f46621a3a00780ae08895d09520139.jpg) center/cover no-repeat;
 }
 
 .chibi {
   /* background: linear-gradient(135deg, #555555 0%, #777777 100%); */
-  background: url(/img/z6998699550416_28174663914e6c18a11b8b6cd0747104.jpg) center/cover no-repeat;
+  background: url(../img/z6998699550416_28174663914e6c18a11b8b6cd0747104.jpg) center/cover no-repeat;
 }
 
 .SRhost {
   /* background: linear-gradient(135deg, #2d4a2d 0%, #4a6a4a 100%); */
-  background: url(/img/z6998699534774_ac6941e7a997e2eb1bebe91c966df23b.jpg) center/cover no-repeat;
+  background: url(../img/z6998699534774_ac6941e7a997e2eb1bebe91c966df23b.jpg) center/cover no-repeat;
 }
 
 .game-art {
