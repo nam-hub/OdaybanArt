@@ -3,25 +3,25 @@ let currentRating = 0;
 let artData = [
   {
     name: "picture1",
-    artist: "Nguyễn Văn A",
+    artist: " Hehewe",
     rating: "★★★★★",
     ratingCount: "(24)",
     category: "SR",
     imageClass: "SR",
-    modalDescription: "hello"
+    modalDescription: "đẹp vl"
   },
   {
-    name: "picture2",
-    artist: "Trần Thị B",
-    rating: "★★★★☆",
+    name: "Mẫu gốc",
+    artist: "Ẩn danh",
+    rating: "★★★★★",
     ratingCount: "(18)",
     category: "Manga",
     imageClass: "Manga",
     modalDescription: "Bức tranh này dựa trên ảnh đại diện Roblox , phát họa lại với phong cách Anime / Manga thêm một chút Semi - Realistic mang lại cái nhìn sắc xảo - nét riêng, đáp ứng nhu cầu người thuê."
   },
   {
-    name: "picture3",
-    artist: "Lê Văn C",
+    name: "Mẫu gốc",
+    artist: "Ẩn danh",
     rating: "★★★★★",
     ratingCount: "(31)",
     category: "chibi",
@@ -29,22 +29,22 @@ let artData = [
     modalDescription: "Một bức ảnh nhưng mang phong cách Chibi.Nét vẽ đáng yêu kết hợp cùng hiệu ứng màu neon đã tạo nên một tác phẩm bắt mắt, thể hiện cá tính tinh nghịch và tràn đầy năng lượng."
   },
   {
-    name: "picture4",
-    artist: "Phạm Thị D",
-    rating: "★★★★☆",
+    name: "Mẫu gốc",
+    artist: "Ẩn danh",
+    rating: "★★★★★",
     ratingCount: "(15)",
     category: "SR",
     imageClass: "SRhost",
     modalDescription: "Từ một avatar Roblox đơn giản, bức vẽ đã được thành chân dung đầy khí chất phù hợp với phong cách Style đúng ý bạn.Vừa nghệ thuật - nâng tầm nhân vật trong game."
   },
   {
-    name: "👷🏻ĐANG CẬP NHẬT🛠️",
-    artist: "👷🏻ĐANG CẬP NHẬT🛠️",
-    rating: "🛠️",
+    name: "picture",
+    artist: " Yu",
+    rating: "★★★★★",
     ratingCount: "",
     category: "game",
     imageClass: "game-art",
-    modalDescription: "hello"
+    modalDescription: "dthw vl"
   },
   {
     name: "👷🏻ĐANG CẬP NHẬT🛠️",
@@ -108,7 +108,7 @@ function openModal(index) {
   const art = artData[index];
   
   document.getElementById('modalTitle').textContent = art.name;
-  document.getElementById('modalArtist').textContent = `Nghệ sĩ: ${art.artist}`;
+  document.getElementById('modalArtist').textContent = `Khách hàng: ${art.artist}`;
   document.getElementById('modalPrice').textContent = art.price;
   document.getElementById('modalRating').innerHTML = `
     <span class="stars">${art.rating}</span>
