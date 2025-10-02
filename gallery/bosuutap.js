@@ -6,7 +6,7 @@ let artData = [
     artist: " Hehewe",
     rating: "★★★★★",
     ratingCount: "(24)",
-    category: "SR",
+    category: "Semi Realistic",
     imageClass: "SR",
     modalDescription: "đẹp vl"
   },
@@ -15,7 +15,7 @@ let artData = [
     artist: "Ẩn danh",
     rating: "★★★★★",
     ratingCount: "(18)",
-    category: "Manga",
+    category: "Semi Realistic",
     imageClass: "Manga",
     modalDescription: "Bức tranh này dựa trên ảnh đại diện Roblox , phát họa lại với phong cách Anime / Manga thêm một chút Semi - Realistic mang lại cái nhìn sắc xảo - nét riêng, đáp ứng nhu cầu người thuê."
   },
@@ -24,7 +24,7 @@ let artData = [
     artist: "Ẩn danh",
     rating: "★★★★★",
     ratingCount: "(31)",
-    category: "chibi",
+    category: "ChibiStyle",
     imageClass: "chibi",
     modalDescription: "Một bức ảnh nhưng mang phong cách Chibi.Nét vẽ đáng yêu kết hợp cùng hiệu ứng màu neon đã tạo nên một tác phẩm bắt mắt, thể hiện cá tính tinh nghịch và tràn đầy năng lượng."
   },
@@ -33,7 +33,7 @@ let artData = [
     artist: "Ẩn danh",
     rating: "★★★★★",
     ratingCount: "(15)",
-    category: "SR",
+    category: "SigmaAn",
     imageClass: "SRhost",
     modalDescription: "Từ một avatar Roblox đơn giản, bức vẽ đã được thành chân dung đầy khí chất phù hợp với phong cách Style đúng ý bạn.Vừa nghệ thuật - nâng tầm nhân vật trong game."
   },
@@ -42,7 +42,7 @@ let artData = [
     artist: " Yu",
     rating: "★★★★★",
     ratingCount: "",
-    category: "game",
+    category: "ChibiStyle",
     imageClass: "game-art",
     modalDescription: "dthw vl"
   },
